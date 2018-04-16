@@ -8,6 +8,10 @@ var PluginError    = require('plugin-error');
 
 var less           = accord.load('less');
 
+
+require('./hotfix');
+
+
 module.exports = function (options) {
   // Mixes in default options.
   var opts = assign({}, {
